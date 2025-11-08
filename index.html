@@ -1,29 +1,35 @@
   <!DOCTYPE html>
 <html>
 <head>
+  <!--Titulo de la pagina-->
   <title>InventarioWeb</title>
+  <!--Estilos css para dar forma a la pagina-->
   <style>
+    /*Estilo general del cuerpo de la pagina*/
     body {
-      font-family: Arial, sans-serif;
-      background-color: #6592c9;
-      padding: 20px;
+      font-family: Arial, sans-serif; /*Fuente de la pagina*/
+      background-color: #6592c9;      /*Color de fondo de la pagina*/
+      padding: 20px;                  /*Espacio interno alrededor del contenido*/
     }
+    /*Estilo del formulario*/
     form{
-      background-color: #3c8fa3;
-      border: 1px solid #6895b3;
-      padding: 15px;
-      width: 300px;
+      background-color: #3c8fa3;      /*Fondo del formulario*/
+      border: 1px solid #6895b3;      /*Borde del formulario*/
+      padding: 15px;                  /*Espacio interno del formulario*/
+      width: 300px;                   /*Ancho del formulario*/
     }
+    /*Estilo del boton del formulario*/
     button{
-      background-color: #4c66af;
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 4px;
+      background-color: #4c66af;      /*Color del fondo del boton*/
+      color: white;                   /*Color del texto*/
+      border: none;                   /*Sin borde*/
+      padding: 10px;                  /*Espacio interno del bton*/
+      cursor: pointer;                /*Cambia el cursor al pasar sobre el boton*/
+      border-radius: 4px;             /*Bordes redondeados*/
     }
+    /*Efecto cuando el mouse pasa sobre el boton*/
     button:hover {
-      background-color: #4597a0;
+      background-color: #4597a0;      /*Cambia el color al pasar el cursor*/
     }
   </style>
 </head>
@@ -31,27 +37,36 @@
 
   
 <body>
+  <!--Titulo principal de la pagina-->
   <h1>Sistema de Control de Inventario</h1>
+  <!--Descripcion breve de la pagina-->
   <p>Registra, consulta y actualiza tus productos fácilmente.</p>
-  
+  <!--Mensaje de bienvenida-->
   <p>Bienvenido al Sistema de Inventario</p>
+  <!--Subtitulo de la seccion de productos existentes-->
   <h2>Lista de Productos</h2>
+  <!--Lista de producto existentes-->
   <ul>
     <li>Producto 1</li>
     <li>Producto 2</li>
   </ul>
+  <!--Subtitulo de la seccion para agregar nuevos productos-->
   <h2>Agregar Nuevo Producto</h2>
   <!-- Formulario para registrar nuevos productos en el inventario -->
   <form>
+    <!--Campo para el nombre del producto-->
     <label for="nombre">Nombre del producto:</label>
     <input type="text" id="nombre" name="nombre" required><br><br>
 
+    <!--Campo para la cantidad del producto-->
     <label for="cantidad">Cantidad:</label>
     <input type="number" id="cantidad" name="cantidad" required><br><br>
-
+    
+    <!--Campo para el precio del producto-->
     <label for="precio">Precio:</label>
     <input type="number" id="precio" name="precio" step="0.01" required><br><br>
 
+    <!--Boton para enviar el formulario-->
     <button type="submit">Agregar Producto</button>
   </form>
 </body>
